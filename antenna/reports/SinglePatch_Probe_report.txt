@@ -1,0 +1,82 @@
+====================================================================================================
+4x4 CORPORATE-FED PATCH ARRAY  -  ANALYTICAL STARTING GEOMETRY
+f0 = 5.850 GHz   band 5.70 - 6.00 GHz   FR-4 er = 4.40  tand = 0.020  h = 1.60 mm  tCu = 0.035 mm
+lambda0 = 51.247 mm
+====================================================================================================
+
+Microstrip lines (Hammerstad-Jensen Z0, Kirschning-Jansen dispersion)
+
+  Line            Width(mm)    Z0(ohm)   Eeff_dc  Eeff(f0) Lambda_g(mm)   Lambda_g/4
+  50 ohm             3.0830     49.999    3.3323    3.4905      27.4297       6.8574
+  70.71 ohm          1.6055     70.710    3.1722    3.2892      28.2567       7.0642
+  Patch Tx           1.0000     87.465    3.0878    3.1818      28.7297       7.1824
+
+  Quasi-static quarter waves for comparison: 50 ohm 7.0183, 70.71 ohm 7.1932, patch Tx 7.2909 mm
+  Dispersion is applied at f0 (USE_DISPERSIVE_QUARTER_WAVE = True).
+  Note: dispersion shortens lambda_g while a lower real FR-4 er near 6 GHz lengthens it; the two partly cancel, which is
+  why the quasi-static numbers sit close to the user's full-wave tuned 7.25 mm.  Set ER to the laminate's measured value at 6 GHz if known.
+
+Radiating element
+  Wp analytic = 15.5938 mm, Wp used = 15.5940 mm (full-wave verified)
+  Lp analytic = 11.6327 mm (deltaL = 0.7232, eeff = 3.8381), Lp used = 10.3880 mm (full-wave verified, feed-loaded)
+  Slot conductances G1 = 9.6930e-04 S, G12 = 6.7643e-04 S -> lossless edge R = 303.8 ohm
+  Edge R used = 153.00 ohm -> patch transformer 87.46 ohm, 1.0000 mm wide, 7.1824 mm long.
+  Lp = 10.3880 mm = 10.9495 mm scaled by 0.9487 (measured resonance 5.550 GHz / f0).
+
+HFSS calibration applied
+  The supplied single-patch validation gives S11 = -12.905 dB and Z = 37.15 - j15.30 ohm at 5.85 GHz; its S11 minimum is near 5.93 GHz.
+  The supplied full array gives S11 = -8.26 dB and Z = 37.43 -34.03j ohm at 5.85 GHz.
+  Patch and corporate-tree geometry are retained.  The array input is corrected with a measured-impedance open-stub tuner.
+
+Corporate divider impedance proof (1 -> 2 -> 4 -> 8 -> 16)
+  Claim: every branch presents 50 ohm at its own input.
+  Base case (stage 4): patch edge 153.00 ohm -> 87.46 ohm quarter wave gives 87.46^2/153.00 = 50.00 ohm;
+    the 50 ohm run is then matched, so the stage-4 branch input (before its own 70.71 ohm section) is 50 ohm.
+  Induction step: a branch whose subtree presents 50 ohm is raised by its 70.710 ohm quarter wave to 70.710^2/50 = 100.00 ohm;
+    two identical branches in parallel at the tee give 50.00 ohm, and the parent 50 ohm line is matched.
+  Therefore the SAME 70.71 ohm quarter wave is correct at every one of the four stages, provided it is placed on the
+  CHILD side of each tee, immediately at the junction.  It is placed there in this script, so there is no stray 50 ohm
+  stub between a tee and its transformer.  A 35.36 ohm section would only be correct for the opposite placement
+  (transformer on the parent side, feeding two 50 ohm branches directly); that variant is not used here.
+
+Pitch and board
+  dx = 38.3864 mm = 0.7491 lambda0     dy = 34.0000 mm = 0.6635 lambda0
+  Pitch increase applied to both axes: 0.0000 mm (clearance-driven, see solve_pitch).
+  Broadside grating lobes require d >= lambda0; both pitches are below 0.85 lambda0, so no grating lobe exists in real
+  space, at the cost of a slightly narrower beam and somewhat higher sidelobes than the previous spacing.
+  Original board 155.0 x 145.0 mm; corrected board 62.0 x 43.0 mm
+  Copper half-extent 7.797 x 9.735 mm plus 12.0 mm margin.
+  Physical aperture A_board = 2666.0 mm^2 (was 22475.0 mm^2).
+
+Checking copper continuity (overlap 0.050 mm per side, corner fill ON)...
+  Probe_50                       50 ohm line -> patch taper                 PASS (solid to 0.450 mm)
+  Probe_50PT_Taper               patch taper -> patch transformer           PASS (solid to 0.450 mm)
+  Probe_PT                       patch transformer -> patch                 PASS (solid to 0.450 mm)
+  Joints checked: 3   failures: 0
+  All feed paths geometrically continuous, no corner voids: PASS
+
+Feed-to-patch clearance verification (non-owning patches only)
+  Single-element design: no non-owning patch exists. SKIPPED
+
+Feed-to-feed clearance (unconnected conductors)
+  No unconnected conductor pair exists. SKIPPED
+
+Board containment
+  Board 62.0 x 43.0 mm; tightest copper-to-edge margin 0.000 mm (Probe_50)
+  STATUS = PASS (the port face is on the edge by design)
+
+Branch symmetry by stage
+  Stage 4:  1 branches, length   34.0000 mm, spread 0.00e+00 mm  PASS
+
+Port-to-patch budget (all lengths mm, centreline, diagonals true length)
+
+  Element          50ohm  70.71ohm    tapers   patchTx      total phase[deg]      dphi
+  Probe          23.8176    0.0000    3.0000    7.1824    34.0000     441.39 0.00e+00
+
+  dL_max  = 0.000e+00 mm   dphi_max = 0.000e+00 deg
+  Per-class lengths identical across all 16 paths: YES
+
+----------------------------------------------------------------------------------------------------
+OVERALL GEOMETRY VALIDATION: PASS
+This is an unsimulated starting geometry.  No claim is made about S11, VSWR, gain, coupling or efficiency.
+----------------------------------------------------------------------------------------------------

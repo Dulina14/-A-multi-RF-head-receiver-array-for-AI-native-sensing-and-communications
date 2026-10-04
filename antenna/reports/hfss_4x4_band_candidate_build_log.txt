@@ -1,0 +1,17 @@
+4x4 FR-4 array; matching candidate stubL=2.8mm; stubD=21.3mm, pointing toward negative y. Original patch and corporate-tree dimensions retained. FR-4 copper sizing er=4.4, HFSS board er=4.5, tanD=0.02, h=1.6mm; copper=0.035mm with conductivity 5.8e7 S/m. Adaptive maxDeltaS=0.02, maxPasses=18; ResonanceCheck is a discrete 5.7-6.0GHz sweep. No simulation was started.
+Flat tees=True, flat bend fill=True.
+Physical limitation: nominal FR-4 and ideal lumped input are not measured substrate data or an SMA/coax launch.
+Solution type: HFSS Modal Network
+Array4x4_FR4_BandCandidate: 161 copper solids created.
+Array4x4_FR4_BandCandidate: Unite left 0 separate top-copper bodies (0 expected).
+Array4x4_FR4_BandCandidate: STUDENT_MESH_SAFE - SMA pads, vias and mounting holes are in the Gerbers only, not in HFSS.
+  report SKIPPED (dB(S11)): Exception: CreateReport(string reportNameArg, string reportTypeArg, string displayTypeArg, string solutionNameArg, Structured Array simValueCtxtArg, Structured Array pointSetArg, Structured Array expressionsOfTracesArg, [Structured Array extTraceInfoArg /*optional*/])(S11_dB,Modal Solution Data,Rectangular Plot,Setup1 : WideSweep,IronPython.Runtime.List,IronPython.Runtime.List,IronPython.Runtime.List,IronPython.Runtime.List) - call failed. Logs or message window might have more details
+  report OK: dB(S11) direct check
+  report SKIPPED (VSWR): Exception: CreateReport(string reportNameArg, string reportTypeArg, string displayTypeArg, string solutionNameArg, Structured Array simValueCtxtArg, Structured Array pointSetArg, Structured Array expressionsOfTracesArg, [Structured Array extTraceInfoArg /*optional*/])(VSWR_P1,Modal Solution Data,Rectangular Plot,Setup1 : WideSweep,IronPython.Runtime.List,IronPython.Runtime.List,IronPython.Runtime.List,IronPython.Runtime.List) - call failed. Logs or message window might have more details
+  report OK: Realized gain cuts phi=0/90
+  report OK: Realized gain vs band, phi=0
+  report OK: Antenna parameters table
+Array4x4_FR4_BandCandidate: geometry, material, P1, radiation, setup, three sweeps, far field and reports created.
+Array4x4_FR4_BandCandidate: ValidateDesign returned True.
+Array4x4_FR4_BandCandidate: JLC Gerbers written: D:\University\FYP\HFSS\final\Array4x4_5p85GHz_JLC_Gerbers.zip
+SAVED: D:\University\FYP\HFSS\final\FR4_5850_4x4_BandCandidate_20260929_201533.aedt

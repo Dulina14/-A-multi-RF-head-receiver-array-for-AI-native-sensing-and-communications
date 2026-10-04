@@ -1,0 +1,17 @@
+G04 Board outline*
+%TF.GenerationSoftware,build_4x4_FR4_JLC,script,1*%
+%TF.FileFunction,Profile,NP*%
+%TF.FilePolarity,Positive*%
+%FSLAX46Y46*%
+%MOMM*%
+%ADD10C,0.100000*%
+%LPD*%
+G01*
+G75*
+D10*
+X0Y0D02*
+X161000000Y0D01*
+X161000000Y152000000D01*
+X0Y152000000D01*
+X0Y0D01*
+M02*

@@ -1,0 +1,17 @@
+M48
+; DRILL file build_4x4_FR4_JLC
+; FORMAT={-:-/ absolute / metric / decimal}
+; #@! TF.FileFunction,NonPlated,1,2,NPTH
+FMAT,2
+METRIC
+T1C3.200
+%
+G90
+G05
+T1
+X5.0000Y5.0000
+X5.0000Y147.0000
+X156.0000Y5.0000
+X156.0000Y147.0000
+T0
+M30

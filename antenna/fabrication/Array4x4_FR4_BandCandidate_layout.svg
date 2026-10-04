@@ -1,0 +1,267 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="996" viewBox="0 0 980 996">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<g font-family="Arial, sans-serif" fill="#152838">
+<text x="60" y="26" font-size="19">Array4x4_FR4_BandCandidate | 5.85 GHz FR-4 corrected starting geometry</text>
+<text x="60" y="46" font-size="12">Nominal dimensions in mm. Unoptimized; no simulated performance is shown.</text>
+<rect x="60" y="60" width="805" height="760" fill="#32914b" stroke="#87949d"/>
+<rect x="96.603" y="658.044" width="127.970" height="101.940" fill="none" stroke="#c03a3a" stroke-width="0.8" stroke-dasharray="4 3"/>
+<rect x="297.878" y="658.044" width="127.970" height="101.940" fill="none" stroke="#c03a3a" stroke-width="0.8" stroke-dasharray="4 3"/>
+<rect x="96.603" y="478.701" width="127.970" height="101.940" fill="none" stroke="#c03a3a" stroke-width="0.8" stroke-dasharray="4 3"/>
+<rect x="297.878" y="478.701" width="127.970" height="101.940" fill="none" stroke="#c03a3a" stroke-width="0.8" stroke-dasharray="4 3"/>
+<rect x="499.152" y="658.044" width="127.970" height="101.940" fill="none" stroke="#c03a3a" stroke-width="0.8" stroke-dasharray="4 3"/>
+<rect x="700.427" y="658.044" width="127.970" height="101.940" fill="none" stroke="#c03a3a" stroke-width="0.8" stroke-dasharray="4 3"/>
+<rect x="499.152" y="478.701" width="127.970" height="101.940" fill="none" stroke="#c03a3a" stroke-width="0.8" stroke-dasharray="4 3"/>
+<rect x="700.427" y="478.701" width="127.970" height="101.940" fill="none" stroke="#c03a3a" stroke-width="0.8" stroke-dasharray="4 3"/>
+<rect x="96.603" y="299.359" width="127.970" height="101.940" fill="none" stroke="#c03a3a" stroke-width="0.8" stroke-dasharray="4 3"/>
+<rect x="297.878" y="299.359" width="127.970" height="101.940" fill="none" stroke="#c03a3a" stroke-width="0.8" stroke-dasharray="4 3"/>
+<rect x="96.603" y="120.016" width="127.970" height="101.940" fill="none" stroke="#c03a3a" stroke-width="0.8" stroke-dasharray="4 3"/>
+<rect x="297.878" y="120.016" width="127.970" height="101.940" fill="none" stroke="#c03a3a" stroke-width="0.8" stroke-dasharray="4 3"/>
+<rect x="499.152" y="299.359" width="127.970" height="101.940" fill="none" stroke="#c03a3a" stroke-width="0.8" stroke-dasharray="4 3"/>
+<rect x="700.427" y="299.359" width="127.970" height="101.940" fill="none" stroke="#c03a3a" stroke-width="0.8" stroke-dasharray="4 3"/>
+<rect x="499.152" y="120.016" width="127.970" height="101.940" fill="none" stroke="#c03a3a" stroke-width="0.8" stroke-dasharray="4 3"/>
+<rect x="700.427" y="120.016" width="127.970" height="101.940" fill="none" stroke="#c03a3a" stroke-width="0.8" stroke-dasharray="4 3"/>
+<polygon points="458.486,488.677 466.514,488.677 466.514,473.262 458.486,473.262" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Tee_root</title></polygon>
+<polygon points="864.000,447.707 523.470,447.707 523.470,432.293 864.000,432.293" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Input50_Rerouted</title></polygon>
+<polygon points="528.920,445.450 487.950,486.420 477.050,475.520 518.020,434.550" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Input50_Rerouted</title></polygon>
+<polygon points="482.500,488.677 462.250,488.677 462.250,473.262 482.500,473.262" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Input50_Rerouted</title></polygon>
+<polygon points="515.762,447.707 531.177,447.707 531.177,432.293 515.762,432.293" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Input50_Rerouted</title></polygon>
+<polygon points="474.793,488.677 490.207,488.677 490.207,473.262 474.793,473.262" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Input50_Rerouted</title></polygon>
+<polygon points="766.207,439.750 766.207,454.000 750.793,454.000 750.793,439.750" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>InputMatchStub</title></polygon>
+<polygon points="750.793,447.707 766.207,447.707 766.207,432.293 750.793,432.293" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Tee_InputMatch</title></polygon>
+<polygon points="458.486,516.541 466.514,516.541 466.514,480.720 458.486,480.720" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0_Q</title></polygon>
+<polygon points="458.486,516.041 454.793,531.541 470.207,531.541 466.514,516.041" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0_Q50_Taper</title></polygon>
+<polygon points="454.793,660.562 470.207,660.562 470.207,531.041 454.793,531.041" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0_50</title></polygon>
+<polygon points="454.793,664.326 470.207,664.326 470.207,656.299 454.793,656.299" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Tee_0</title></polygon>
+<polygon points="426.929,664.326 462.750,664.326 462.750,656.299 426.929,656.299" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_00_Q</title></polygon>
+<polygon points="430.194,657.651 421.846,644.079 410.946,654.979 424.518,663.327" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_00_Q50_Taper</title></polygon>
+<polygon points="424.341,663.151 427.179,664.326 427.179,660.312" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_00_BendFill</title></polygon>
+<polygon points="411.299,655.333 380.759,624.793 391.659,613.893 422.199,644.433" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_00_50_Clearance</title></polygon>
+<polygon points="386.209,627.050 322.195,627.050 322.195,611.635 386.209,611.635" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_00_50_Clearance</title></polygon>
+<polygon points="327.645,624.793 286.675,665.762 275.775,654.862 316.745,613.893" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_00_50_Clearance</title></polygon>
+<polygon points="281.225,668.020 260.975,668.020 260.975,652.605 281.225,652.605" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_00_50_Clearance</title></polygon>
+<polygon points="378.502,627.050 393.917,627.050 393.917,611.635 378.502,611.635" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_00_50_Clearance</title></polygon>
+<polygon points="314.488,627.050 329.903,627.050 329.903,611.635 314.488,611.635" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_00_50_Clearance</title></polygon>
+<polygon points="273.518,668.020 288.933,668.020 288.933,652.605 273.518,652.605" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_00_50_Clearance</title></polygon>
+<polygon points="257.212,668.020 265.239,668.020 265.239,652.605 257.212,652.605" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Tee_00</title></polygon>
+<polygon points="257.212,695.883 265.239,695.883 265.239,660.062 257.212,660.062" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_000_Q</title></polygon>
+<polygon points="257.212,695.383 253.518,710.883 268.933,710.883 265.239,695.383" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_000_Q50_Taper</title></polygon>
+<polygon points="253.518,750.234 268.933,750.234 268.933,710.383 253.518,710.383" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_000_50</title></polygon>
+<polygon points="253.518,753.997 268.933,753.997 268.933,745.970 253.518,745.970" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Tee_000</title></polygon>
+<polygon points="121.603,734.984 199.573,734.984 199.573,683.044 121.603,683.044" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Patch_r1_c1</title></polygon>
+<text x="160.588" y="713.014" text-anchor="middle" font-size="11">r1_c1</text>
+<polygon points="225.655,753.997 261.475,753.997 261.475,745.970 225.655,745.970" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0000_Q</title></polygon>
+<polygon points="226.155,745.970 210.655,742.276 210.655,757.691 226.155,753.997" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0000_Q50_Taper</title></polygon>
+<polygon points="196.250,757.691 211.155,757.691 211.155,742.276 196.250,742.276" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0000_50</title></polygon>
+<polygon points="196.750,742.276 181.250,747.484 181.250,752.484 196.750,757.691" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0000_50PT_Taper</title></polygon>
+<polygon points="181.750,752.484 160.588,752.484 160.588,747.484 181.750,747.484" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0000_PT</title></polygon>
+<polygon points="158.088,749.984 158.088,734.734 163.088,734.734 163.088,749.984" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0000_PT</title></polygon>
+<polygon points="158.088,752.484 163.088,752.484 163.088,747.484 158.088,747.484" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0000_PT</title></polygon>
+<polygon points="322.878,734.984 400.848,734.984 400.848,683.044 322.878,683.044" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Patch_r1_c2</title></polygon>
+<text x="361.863" y="713.014" text-anchor="middle" font-size="11">r1_c2</text>
+<polygon points="260.975,753.997 296.796,753.997 296.796,745.970 260.975,745.970" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0001_Q</title></polygon>
+<polygon points="296.296,753.997 311.796,757.691 311.796,742.276 296.296,745.970" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0001_Q50_Taper</title></polygon>
+<polygon points="311.296,757.691 326.201,757.691 326.201,742.276 311.296,742.276" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0001_50</title></polygon>
+<polygon points="325.701,757.691 341.201,752.484 341.201,747.484 325.701,742.276" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0001_50PT_Taper</title></polygon>
+<polygon points="340.701,747.484 361.863,747.484 361.863,752.484 340.701,752.484" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0001_PT</title></polygon>
+<polygon points="359.363,749.984 359.363,734.734 364.363,734.734 364.363,749.984" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0001_PT</title></polygon>
+<polygon points="359.363,752.484 364.363,752.484 364.363,747.484 359.363,747.484" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0001_PT</title></polygon>
+<polygon points="257.212,660.562 265.239,660.562 265.239,624.742 257.212,624.742" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_001_Q</title></polygon>
+<polygon points="265.239,625.242 268.933,609.742 253.518,609.742 257.212,625.242" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_001_Q50_Taper</title></polygon>
+<polygon points="253.518,610.242 268.933,610.242 268.933,570.391 253.518,570.391" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_001_50</title></polygon>
+<polygon points="253.518,574.655 268.933,574.655 268.933,566.627 253.518,566.627" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Tee_001</title></polygon>
+<polygon points="121.603,555.641 199.573,555.641 199.573,503.701 121.603,503.701" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Patch_r2_c1</title></polygon>
+<text x="160.588" y="533.671" text-anchor="middle" font-size="11">r2_c1</text>
+<polygon points="225.655,574.655 261.475,574.655 261.475,566.627 225.655,566.627" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0010_Q</title></polygon>
+<polygon points="226.155,566.627 210.655,562.934 210.655,578.349 226.155,574.655" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0010_Q50_Taper</title></polygon>
+<polygon points="196.250,578.349 211.155,578.349 211.155,562.934 196.250,562.934" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0010_50</title></polygon>
+<polygon points="196.750,562.934 181.250,568.141 181.250,573.141 196.750,578.349" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0010_50PT_Taper</title></polygon>
+<polygon points="181.750,573.141 160.588,573.141 160.588,568.141 181.750,568.141" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0010_PT</title></polygon>
+<polygon points="158.088,570.641 158.088,555.391 163.088,555.391 163.088,570.641" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0010_PT</title></polygon>
+<polygon points="158.088,573.141 163.088,573.141 163.088,568.141 158.088,568.141" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0010_PT</title></polygon>
+<polygon points="322.878,555.641 400.848,555.641 400.848,503.701 322.878,503.701" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Patch_r2_c2</title></polygon>
+<text x="361.863" y="533.671" text-anchor="middle" font-size="11">r2_c2</text>
+<polygon points="260.975,574.655 296.796,574.655 296.796,566.627 260.975,566.627" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0011_Q</title></polygon>
+<polygon points="296.296,574.655 311.796,578.349 311.796,562.934 296.296,566.627" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0011_Q50_Taper</title></polygon>
+<polygon points="311.296,578.349 326.201,578.349 326.201,562.934 311.296,562.934" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0011_50</title></polygon>
+<polygon points="325.701,578.349 341.201,573.141 341.201,568.141 325.701,562.934" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0011_50PT_Taper</title></polygon>
+<polygon points="340.701,568.141 361.863,568.141 361.863,573.141 340.701,573.141" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0011_PT</title></polygon>
+<polygon points="359.363,570.641 359.363,555.391 364.363,555.391 364.363,570.641" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0011_PT</title></polygon>
+<polygon points="359.363,573.141 364.363,573.141 364.363,568.141 359.363,568.141" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0011_PT</title></polygon>
+<polygon points="462.250,664.326 498.071,664.326 498.071,656.299 462.250,656.299" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_01_Q</title></polygon>
+<polygon points="500.482,663.327 514.054,654.979 503.154,644.079 494.806,657.651" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_01_Q50_Taper</title></polygon>
+<polygon points="497.821,660.312 497.821,664.326 500.659,663.151" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_01_BendFill</title></polygon>
+<polygon points="502.801,644.433 533.341,613.893 544.241,624.793 513.701,655.333" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_01_50_Clearance</title></polygon>
+<polygon points="538.791,611.635 602.805,611.635 602.805,627.050 538.791,627.050" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_01_50_Clearance</title></polygon>
+<polygon points="608.255,613.893 649.225,654.862 638.325,665.762 597.355,624.793" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_01_50_Clearance</title></polygon>
+<polygon points="643.775,652.605 664.025,652.605 664.025,668.020 643.775,668.020" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_01_50_Clearance</title></polygon>
+<polygon points="531.083,627.050 546.498,627.050 546.498,611.635 531.083,611.635" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_01_50_Clearance</title></polygon>
+<polygon points="595.097,627.050 610.512,627.050 610.512,611.635 595.097,611.635" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_01_50_Clearance</title></polygon>
+<polygon points="636.067,668.020 651.482,668.020 651.482,652.605 636.067,652.605" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_01_50_Clearance</title></polygon>
+<polygon points="659.761,668.020 667.788,668.020 667.788,652.605 659.761,652.605" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Tee_01</title></polygon>
+<polygon points="659.761,695.883 667.788,695.883 667.788,660.062 659.761,660.062" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_010_Q</title></polygon>
+<polygon points="659.761,695.383 656.067,710.883 671.482,710.883 667.788,695.383" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_010_Q50_Taper</title></polygon>
+<polygon points="656.067,750.234 671.482,750.234 671.482,710.383 656.067,710.383" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_010_50</title></polygon>
+<polygon points="656.067,753.997 671.482,753.997 671.482,745.970 656.067,745.970" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Tee_010</title></polygon>
+<polygon points="524.152,734.984 602.122,734.984 602.122,683.044 524.152,683.044" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Patch_r1_c3</title></polygon>
+<text x="563.137" y="713.014" text-anchor="middle" font-size="11">r1_c3</text>
+<polygon points="628.204,753.997 664.025,753.997 664.025,745.970 628.204,745.970" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0100_Q</title></polygon>
+<polygon points="628.704,745.970 613.204,742.276 613.204,757.691 628.704,753.997" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0100_Q50_Taper</title></polygon>
+<polygon points="598.799,757.691 613.704,757.691 613.704,742.276 598.799,742.276" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0100_50</title></polygon>
+<polygon points="599.299,742.276 583.799,747.484 583.799,752.484 599.299,757.691" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0100_50PT_Taper</title></polygon>
+<polygon points="584.299,752.484 563.137,752.484 563.137,747.484 584.299,747.484" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0100_PT</title></polygon>
+<polygon points="560.637,749.984 560.637,734.734 565.637,734.734 565.637,749.984" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0100_PT</title></polygon>
+<polygon points="560.637,752.484 565.637,752.484 565.637,747.484 560.637,747.484" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0100_PT</title></polygon>
+<polygon points="725.427,734.984 803.397,734.984 803.397,683.044 725.427,683.044" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Patch_r1_c4</title></polygon>
+<text x="764.412" y="713.014" text-anchor="middle" font-size="11">r1_c4</text>
+<polygon points="663.525,753.997 699.345,753.997 699.345,745.970 663.525,745.970" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0101_Q</title></polygon>
+<polygon points="698.845,753.997 714.345,757.691 714.345,742.276 698.845,745.970" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0101_Q50_Taper</title></polygon>
+<polygon points="713.845,757.691 728.750,757.691 728.750,742.276 713.845,742.276" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0101_50</title></polygon>
+<polygon points="728.250,757.691 743.750,752.484 743.750,747.484 728.250,742.276" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0101_50PT_Taper</title></polygon>
+<polygon points="743.250,747.484 764.412,747.484 764.412,752.484 743.250,752.484" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0101_PT</title></polygon>
+<polygon points="761.912,749.984 761.912,734.734 766.912,734.734 766.912,749.984" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0101_PT</title></polygon>
+<polygon points="761.912,752.484 766.912,752.484 766.912,747.484 761.912,747.484" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0101_PT</title></polygon>
+<polygon points="659.761,660.562 667.788,660.562 667.788,624.742 659.761,624.742" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_011_Q</title></polygon>
+<polygon points="667.788,625.242 671.482,609.742 656.067,609.742 659.761,625.242" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_011_Q50_Taper</title></polygon>
+<polygon points="656.067,610.242 671.482,610.242 671.482,570.391 656.067,570.391" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_011_50</title></polygon>
+<polygon points="656.067,574.655 671.482,574.655 671.482,566.627 656.067,566.627" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Tee_011</title></polygon>
+<polygon points="524.152,555.641 602.122,555.641 602.122,503.701 524.152,503.701" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Patch_r2_c3</title></polygon>
+<text x="563.137" y="533.671" text-anchor="middle" font-size="11">r2_c3</text>
+<polygon points="628.204,574.655 664.025,574.655 664.025,566.627 628.204,566.627" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0110_Q</title></polygon>
+<polygon points="628.704,566.627 613.204,562.934 613.204,578.349 628.704,574.655" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0110_Q50_Taper</title></polygon>
+<polygon points="598.799,578.349 613.704,578.349 613.704,562.934 598.799,562.934" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0110_50</title></polygon>
+<polygon points="599.299,562.934 583.799,568.141 583.799,573.141 599.299,578.349" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0110_50PT_Taper</title></polygon>
+<polygon points="584.299,573.141 563.137,573.141 563.137,568.141 584.299,568.141" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0110_PT</title></polygon>
+<polygon points="560.637,570.641 560.637,555.391 565.637,555.391 565.637,570.641" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0110_PT</title></polygon>
+<polygon points="560.637,573.141 565.637,573.141 565.637,568.141 560.637,568.141" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0110_PT</title></polygon>
+<polygon points="725.427,555.641 803.397,555.641 803.397,503.701 725.427,503.701" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Patch_r2_c4</title></polygon>
+<text x="764.412" y="533.671" text-anchor="middle" font-size="11">r2_c4</text>
+<polygon points="663.525,574.655 699.345,574.655 699.345,566.627 663.525,566.627" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0111_Q</title></polygon>
+<polygon points="698.845,574.655 714.345,578.349 714.345,562.934 698.845,566.627" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0111_Q50_Taper</title></polygon>
+<polygon points="713.845,578.349 728.750,578.349 728.750,562.934 713.845,562.934" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0111_50</title></polygon>
+<polygon points="728.250,578.349 743.750,573.141 743.750,568.141 728.250,562.934" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0111_50PT_Taper</title></polygon>
+<polygon points="743.250,568.141 764.412,568.141 764.412,573.141 743.250,573.141" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0111_PT</title></polygon>
+<polygon points="761.912,570.641 761.912,555.391 766.912,555.391 766.912,570.641" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0111_PT</title></polygon>
+<polygon points="761.912,573.141 766.912,573.141 766.912,568.141 761.912,568.141" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_0111_PT</title></polygon>
+<polygon points="458.486,481.220 466.514,481.220 466.514,445.399 458.486,445.399" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1_Q</title></polygon>
+<polygon points="466.514,445.899 470.207,430.399 454.793,430.399 458.486,445.899" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1_Q50_Taper</title></polygon>
+<polygon points="454.793,430.899 470.207,430.899 470.207,301.377 454.793,301.377" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1_50</title></polygon>
+<polygon points="454.793,305.641 470.207,305.641 470.207,297.614 454.793,297.614" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Tee_1</title></polygon>
+<polygon points="426.929,305.641 462.750,305.641 462.750,297.614 426.929,297.614" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_10_Q</title></polygon>
+<polygon points="430.194,298.966 421.846,285.394 410.946,296.294 424.518,304.642" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_10_Q50_Taper</title></polygon>
+<polygon points="424.341,304.465 427.179,305.641 427.179,301.627" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_10_BendFill</title></polygon>
+<polygon points="411.299,296.648 380.759,266.107 391.659,255.207 422.199,285.747" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_10_50_Clearance</title></polygon>
+<polygon points="386.209,268.365 322.195,268.365 322.195,252.950 386.209,252.950" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_10_50_Clearance</title></polygon>
+<polygon points="327.645,266.107 286.675,307.077 275.775,296.177 316.745,255.207" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_10_50_Clearance</title></polygon>
+<polygon points="281.225,309.335 260.975,309.335 260.975,293.920 281.225,293.920" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_10_50_Clearance</title></polygon>
+<polygon points="378.502,268.365 393.917,268.365 393.917,252.950 378.502,252.950" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_10_50_Clearance</title></polygon>
+<polygon points="314.488,268.365 329.903,268.365 329.903,252.950 314.488,252.950" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_10_50_Clearance</title></polygon>
+<polygon points="273.518,309.335 288.933,309.335 288.933,293.920 273.518,293.920" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_10_50_Clearance</title></polygon>
+<polygon points="257.212,309.335 265.239,309.335 265.239,293.920 257.212,293.920" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Tee_10</title></polygon>
+<polygon points="257.212,337.198 265.239,337.198 265.239,301.377 257.212,301.377" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_100_Q</title></polygon>
+<polygon points="257.212,336.698 253.518,352.198 268.933,352.198 265.239,336.698" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_100_Q50_Taper</title></polygon>
+<polygon points="253.518,391.549 268.933,391.549 268.933,351.698 253.518,351.698" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_100_50</title></polygon>
+<polygon points="253.518,395.312 268.933,395.312 268.933,387.285 253.518,387.285" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Tee_100</title></polygon>
+<polygon points="121.603,376.299 199.573,376.299 199.573,324.359 121.603,324.359" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Patch_r3_c1</title></polygon>
+<text x="160.588" y="354.329" text-anchor="middle" font-size="11">r3_c1</text>
+<polygon points="225.655,395.312 261.475,395.312 261.475,387.285 225.655,387.285" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1000_Q</title></polygon>
+<polygon points="226.155,387.285 210.655,383.591 210.655,399.006 226.155,395.312" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1000_Q50_Taper</title></polygon>
+<polygon points="196.250,399.006 211.155,399.006 211.155,383.591 196.250,383.591" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1000_50</title></polygon>
+<polygon points="196.750,383.591 181.250,388.799 181.250,393.799 196.750,399.006" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1000_50PT_Taper</title></polygon>
+<polygon points="181.750,393.799 160.588,393.799 160.588,388.799 181.750,388.799" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1000_PT</title></polygon>
+<polygon points="158.088,391.299 158.088,376.049 163.088,376.049 163.088,391.299" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1000_PT</title></polygon>
+<polygon points="158.088,393.799 163.088,393.799 163.088,388.799 158.088,388.799" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1000_PT</title></polygon>
+<polygon points="322.878,376.299 400.848,376.299 400.848,324.359 322.878,324.359" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Patch_r3_c2</title></polygon>
+<text x="361.863" y="354.329" text-anchor="middle" font-size="11">r3_c2</text>
+<polygon points="260.975,395.312 296.796,395.312 296.796,387.285 260.975,387.285" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1001_Q</title></polygon>
+<polygon points="296.296,395.312 311.796,399.006 311.796,383.591 296.296,387.285" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1001_Q50_Taper</title></polygon>
+<polygon points="311.296,399.006 326.201,399.006 326.201,383.591 311.296,383.591" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1001_50</title></polygon>
+<polygon points="325.701,399.006 341.201,393.799 341.201,388.799 325.701,383.591" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1001_50PT_Taper</title></polygon>
+<polygon points="340.701,388.799 361.863,388.799 361.863,393.799 340.701,393.799" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1001_PT</title></polygon>
+<polygon points="359.363,391.299 359.363,376.049 364.363,376.049 364.363,391.299" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1001_PT</title></polygon>
+<polygon points="359.363,393.799 364.363,393.799 364.363,388.799 359.363,388.799" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1001_PT</title></polygon>
+<polygon points="257.212,301.877 265.239,301.877 265.239,266.057 257.212,266.057" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_101_Q</title></polygon>
+<polygon points="265.239,266.557 268.933,251.057 253.518,251.057 257.212,266.557" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_101_Q50_Taper</title></polygon>
+<polygon points="253.518,251.557 268.933,251.557 268.933,211.706 253.518,211.706" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_101_50</title></polygon>
+<polygon points="253.518,215.970 268.933,215.970 268.933,207.942 253.518,207.942" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Tee_101</title></polygon>
+<polygon points="121.603,196.956 199.573,196.956 199.573,145.016 121.603,145.016" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Patch_r4_c1</title></polygon>
+<text x="160.588" y="174.986" text-anchor="middle" font-size="11">r4_c1</text>
+<polygon points="225.655,215.970 261.475,215.970 261.475,207.942 225.655,207.942" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1010_Q</title></polygon>
+<polygon points="226.155,207.942 210.655,204.249 210.655,219.664 226.155,215.970" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1010_Q50_Taper</title></polygon>
+<polygon points="196.250,219.664 211.155,219.664 211.155,204.249 196.250,204.249" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1010_50</title></polygon>
+<polygon points="196.750,204.249 181.250,209.456 181.250,214.456 196.750,219.664" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1010_50PT_Taper</title></polygon>
+<polygon points="181.750,214.456 160.588,214.456 160.588,209.456 181.750,209.456" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1010_PT</title></polygon>
+<polygon points="158.088,211.956 158.088,196.706 163.088,196.706 163.088,211.956" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1010_PT</title></polygon>
+<polygon points="158.088,214.456 163.088,214.456 163.088,209.456 158.088,209.456" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1010_PT</title></polygon>
+<polygon points="322.878,196.956 400.848,196.956 400.848,145.016 322.878,145.016" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Patch_r4_c2</title></polygon>
+<text x="361.863" y="174.986" text-anchor="middle" font-size="11">r4_c2</text>
+<polygon points="260.975,215.970 296.796,215.970 296.796,207.942 260.975,207.942" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1011_Q</title></polygon>
+<polygon points="296.296,215.970 311.796,219.664 311.796,204.249 296.296,207.942" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1011_Q50_Taper</title></polygon>
+<polygon points="311.296,219.664 326.201,219.664 326.201,204.249 311.296,204.249" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1011_50</title></polygon>
+<polygon points="325.701,219.664 341.201,214.456 341.201,209.456 325.701,204.249" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1011_50PT_Taper</title></polygon>
+<polygon points="340.701,209.456 361.863,209.456 361.863,214.456 340.701,214.456" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1011_PT</title></polygon>
+<polygon points="359.363,211.956 359.363,196.706 364.363,196.706 364.363,211.956" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1011_PT</title></polygon>
+<polygon points="359.363,214.456 364.363,214.456 364.363,209.456 359.363,209.456" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1011_PT</title></polygon>
+<polygon points="462.250,305.641 498.071,305.641 498.071,297.614 462.250,297.614" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_11_Q</title></polygon>
+<polygon points="500.482,304.642 514.054,296.294 503.154,285.394 494.806,298.966" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_11_Q50_Taper</title></polygon>
+<polygon points="497.821,301.627 497.821,305.641 500.659,304.465" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_11_BendFill</title></polygon>
+<polygon points="502.801,285.747 533.341,255.207 544.241,266.107 513.701,296.648" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_11_50_Clearance</title></polygon>
+<polygon points="538.791,252.950 602.805,252.950 602.805,268.365 538.791,268.365" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_11_50_Clearance</title></polygon>
+<polygon points="608.255,255.207 649.225,296.177 638.325,307.077 597.355,266.107" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_11_50_Clearance</title></polygon>
+<polygon points="643.775,293.920 664.025,293.920 664.025,309.335 643.775,309.335" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_11_50_Clearance</title></polygon>
+<polygon points="531.083,268.365 546.498,268.365 546.498,252.950 531.083,252.950" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_11_50_Clearance</title></polygon>
+<polygon points="595.097,268.365 610.512,268.365 610.512,252.950 595.097,252.950" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_11_50_Clearance</title></polygon>
+<polygon points="636.067,309.335 651.482,309.335 651.482,293.920 636.067,293.920" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_11_50_Clearance</title></polygon>
+<polygon points="659.761,309.335 667.788,309.335 667.788,293.920 659.761,293.920" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Tee_11</title></polygon>
+<polygon points="659.761,337.198 667.788,337.198 667.788,301.377 659.761,301.377" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_110_Q</title></polygon>
+<polygon points="659.761,336.698 656.067,352.198 671.482,352.198 667.788,336.698" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_110_Q50_Taper</title></polygon>
+<polygon points="656.067,391.549 671.482,391.549 671.482,351.698 656.067,351.698" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_110_50</title></polygon>
+<polygon points="656.067,395.312 671.482,395.312 671.482,387.285 656.067,387.285" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Tee_110</title></polygon>
+<polygon points="524.152,376.299 602.122,376.299 602.122,324.359 524.152,324.359" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Patch_r3_c3</title></polygon>
+<text x="563.137" y="354.329" text-anchor="middle" font-size="11">r3_c3</text>
+<polygon points="628.204,395.312 664.025,395.312 664.025,387.285 628.204,387.285" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1100_Q</title></polygon>
+<polygon points="628.704,387.285 613.204,383.591 613.204,399.006 628.704,395.312" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1100_Q50_Taper</title></polygon>
+<polygon points="598.799,399.006 613.704,399.006 613.704,383.591 598.799,383.591" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1100_50</title></polygon>
+<polygon points="599.299,383.591 583.799,388.799 583.799,393.799 599.299,399.006" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1100_50PT_Taper</title></polygon>
+<polygon points="584.299,393.799 563.137,393.799 563.137,388.799 584.299,388.799" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1100_PT</title></polygon>
+<polygon points="560.637,391.299 560.637,376.049 565.637,376.049 565.637,391.299" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1100_PT</title></polygon>
+<polygon points="560.637,393.799 565.637,393.799 565.637,388.799 560.637,388.799" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1100_PT</title></polygon>
+<polygon points="725.427,376.299 803.397,376.299 803.397,324.359 725.427,324.359" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Patch_r3_c4</title></polygon>
+<text x="764.412" y="354.329" text-anchor="middle" font-size="11">r3_c4</text>
+<polygon points="663.525,395.312 699.345,395.312 699.345,387.285 663.525,387.285" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1101_Q</title></polygon>
+<polygon points="698.845,395.312 714.345,399.006 714.345,383.591 698.845,387.285" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1101_Q50_Taper</title></polygon>
+<polygon points="713.845,399.006 728.750,399.006 728.750,383.591 713.845,383.591" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1101_50</title></polygon>
+<polygon points="728.250,399.006 743.750,393.799 743.750,388.799 728.250,383.591" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1101_50PT_Taper</title></polygon>
+<polygon points="743.250,388.799 764.412,388.799 764.412,393.799 743.250,393.799" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1101_PT</title></polygon>
+<polygon points="761.912,391.299 761.912,376.049 766.912,376.049 766.912,391.299" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1101_PT</title></polygon>
+<polygon points="761.912,393.799 766.912,393.799 766.912,388.799 761.912,388.799" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1101_PT</title></polygon>
+<polygon points="659.761,301.877 667.788,301.877 667.788,266.057 659.761,266.057" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_111_Q</title></polygon>
+<polygon points="667.788,266.557 671.482,251.057 656.067,251.057 659.761,266.557" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_111_Q50_Taper</title></polygon>
+<polygon points="656.067,251.557 671.482,251.557 671.482,211.706 656.067,211.706" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_111_50</title></polygon>
+<polygon points="656.067,215.970 671.482,215.970 671.482,207.942 656.067,207.942" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Tee_111</title></polygon>
+<polygon points="524.152,196.956 602.122,196.956 602.122,145.016 524.152,145.016" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Patch_r4_c3</title></polygon>
+<text x="563.137" y="174.986" text-anchor="middle" font-size="11">r4_c3</text>
+<polygon points="628.204,215.970 664.025,215.970 664.025,207.942 628.204,207.942" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1110_Q</title></polygon>
+<polygon points="628.704,207.942 613.204,204.249 613.204,219.664 628.704,215.970" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1110_Q50_Taper</title></polygon>
+<polygon points="598.799,219.664 613.704,219.664 613.704,204.249 598.799,204.249" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1110_50</title></polygon>
+<polygon points="599.299,204.249 583.799,209.456 583.799,214.456 599.299,219.664" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1110_50PT_Taper</title></polygon>
+<polygon points="584.299,214.456 563.137,214.456 563.137,209.456 584.299,209.456" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1110_PT</title></polygon>
+<polygon points="560.637,211.956 560.637,196.706 565.637,196.706 565.637,211.956" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1110_PT</title></polygon>
+<polygon points="560.637,214.456 565.637,214.456 565.637,209.456 560.637,209.456" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1110_PT</title></polygon>
+<polygon points="725.427,196.956 803.397,196.956 803.397,145.016 725.427,145.016" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Patch_r4_c4</title></polygon>
+<text x="764.412" y="174.986" text-anchor="middle" font-size="11">r4_c4</text>
+<polygon points="663.525,215.970 699.345,215.970 699.345,207.942 663.525,207.942" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1111_Q</title></polygon>
+<polygon points="698.845,215.970 714.345,219.664 714.345,204.249 698.845,207.942" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1111_Q50_Taper</title></polygon>
+<polygon points="713.845,219.664 728.750,219.664 728.750,204.249 713.845,204.249" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1111_50</title></polygon>
+<polygon points="728.250,219.664 743.750,214.456 743.750,209.456 728.250,204.249" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1111_50PT_Taper</title></polygon>
+<polygon points="743.250,209.456 764.412,209.456 764.412,214.456 743.250,214.456" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1111_PT</title></polygon>
+<polygon points="761.912,211.956 761.912,196.706 766.912,196.706 766.912,211.956" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1111_PT</title></polygon>
+<polygon points="761.912,214.456 766.912,214.456 766.912,209.456 761.912,209.456" fill="#f5be23" stroke="#f5be23" stroke-width="0.25"><title>Branch_1111_PT</title></polygon>
+<line x1="410.946" y1="296.294" x2="400.848" y2="324.359" stroke="#c03a3a" stroke-width="1.6"/>
+<circle cx="410.946" cy="296.294" r="4" fill="none" stroke="#c03a3a" stroke-width="1.6"/>
+<text x="417.946" y="290.294" font-size="11" fill="#c03a3a">min 5.84 mm</text>
+<text x="60" y="844" font-size="13">Board 161.0 x 152.0 mm | Patch 15.594 x 10.388 | dx = 40.255 mm (0.786 lambda0) | dy = 35.869 mm (0.700 lambda0)</text>
+<text x="60" y="864" font-size="12">Yellow: all copper | Green: FR-4 substrate | Red dashed: clearance envelopes</text>
+<text x="60" y="882" font-size="12">Dashed red: 5.0 mm feed-to-patch clearance envelope; no unrelated feed conductor may enter it.</text>
+<text x="60" y="902" font-size="12" fill="#1d7a3c">Minimum non-owning feed-to-patch clearance 5.839 mm (required 5.00 mm) - PASS | joint overlap 0.050 mm | max feed phase spread 0.00e+00 deg</text>
+<text x="60" y="920" font-size="11" fill="#5a6672">Unsimulated geometry. No S11, gain, efficiency or coupling result is implied.</text>
+</g></svg>

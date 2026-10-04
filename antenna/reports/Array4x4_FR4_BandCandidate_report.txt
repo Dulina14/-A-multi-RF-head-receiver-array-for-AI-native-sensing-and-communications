@@ -1,0 +1,293 @@
+====================================================================================================
+4x4 CORPORATE-FED PATCH ARRAY  -  ANALYTICAL STARTING GEOMETRY
+f0 = 5.850 GHz   band 5.70 - 6.00 GHz   FR-4 er = 4.40 (copper sizing), 4.50 (HFSS board material)  tand = 0.020  h = 1.60 mm  tCu = 0.035 mm
+lambda0 = 51.247 mm
+====================================================================================================
+
+Microstrip lines (Hammerstad-Jensen Z0, Kirschning-Jansen dispersion)
+
+  Line            Width(mm)    Z0(ohm)   Eeff_dc  Eeff(f0) Lambda_g(mm)   Lambda_g/4
+  50 ohm             3.0830     49.999    3.3323    3.4905      27.4297       6.8574
+  70.71 ohm          1.6055     70.710    3.1722    3.2892      28.2567       7.0642
+  Patch Tx           1.0000     87.465    3.0878    3.1818      28.7297       7.1824
+
+  Quasi-static quarter waves for comparison: 50 ohm 7.0183, 70.71 ohm 7.1932, patch Tx 7.2909 mm
+  Dispersion is applied at f0 (USE_DISPERSIVE_QUARTER_WAVE = True).
+  Note: dispersion shortens lambda_g while a lower real FR-4 er near 6 GHz lengthens it; the two partly cancel, which is
+  why the quasi-static numbers sit close to the user's full-wave tuned 7.25 mm.  Set ER to the laminate's measured value at 6 GHz if known.
+
+Radiating element
+  Wp analytic = 15.5938 mm, Wp used = 15.5940 mm (full-wave verified)
+  Lp analytic = 11.6327 mm (deltaL = 0.7232, eeff = 3.8381), Lp used = 9.8552 mm (full-wave verified, feed-loaded)
+  Slot conductances G1 = 9.6930e-04 S, G12 = 7.0336e-04 S -> lossless edge R = 298.9 ohm
+  Edge R used = 153.00 ohm -> patch transformer 87.46 ohm, 1.0000 mm wide, 7.1824 mm long.
+  Lp = 9.8552 mm = 10.3880 mm scaled by 0.9487 (measured resonance 5.550 GHz / f0).
+
+HFSS calibration applied
+  The supplied single-patch validation gives S11 = -12.905 dB and Z = 37.15 - j15.30 ohm at 5.85 GHz; its S11 minimum is near 5.93 GHz.
+  The supplied full array gives S11 = -8.26 dB and Z = 37.43 -34.03j ohm at 5.85 GHz.
+  Patch and corporate-tree geometry are retained.  The array input is corrected with a measured-impedance open-stub tuner.
+  Matching-stub tee: 21.3000 mm inward from the existing port.
+  Open 50-ohm stub: 2.8000 mm physical (band candidate).
+  Stub direction along y: -1; pointing toward lower board area.
+
+Corporate divider impedance proof (1 -> 2 -> 4 -> 8 -> 16)
+  Claim: every branch presents 50 ohm at its own input.
+  Base case (stage 4): patch edge 153.00 ohm -> 87.46 ohm quarter wave gives 87.46^2/153.00 = 50.00 ohm;
+    the 50 ohm run is then matched, so the stage-4 branch input (before its own 70.71 ohm section) is 50 ohm.
+  Induction step: a branch whose subtree presents 50 ohm is raised by its 70.710 ohm quarter wave to 70.710^2/50 = 100.00 ohm;
+    two identical branches in parallel at the tee give 50.00 ohm, and the parent 50 ohm line is matched.
+  Therefore the SAME 70.71 ohm quarter wave is correct at every one of the four stages, provided it is placed on the
+  CHILD side of each tee, immediately at the junction.  It is placed there in this script, so there is no stray 50 ohm
+  stub between a tee and its transformer.  A 35.36 ohm section would only be correct for the opposite placement
+  (transformer on the parent side, feeding two 50 ohm branches directly); that variant is not used here.
+
+Pitch and board
+  dx = 40.2549 mm = 0.7855 lambda0     dy = 35.8685 mm = 0.6999 lambda0
+  Array envelope locked to the supplied solved model: dx = 40.2549 mm, dy = 35.8685 mm, board = 161.0 x 152.0 mm.
+  Broadside grating lobes require d >= lambda0; both pitches are below 0.85 lambda0, so no grating lobe exists in real
+  space, at the cost of a slightly narrower beam and somewhat higher sidelobes than the previous spacing.
+  Original board 155.0 x 145.0 mm; corrected board 161.0 x 152.0 mm
+  Copper half-extent 68.179 x 63.272 mm plus 12.0 mm margin.
+  Physical aperture A_board = 24472.0 mm^2 (was 22475.0 mm^2).
+
+Nominal physical-input checks
+  airPad 16.000 mm >= lambda0/4 at 5.3 GHz (14.141 mm): PASS
+  stubL=2.800 mm, stubD=21.300 mm, downward route: PASS
+  ER, tanD, thickness and copper conductivity valid: PASS
+  These are assumed properties, not measurements of a board.
+
+Checking copper continuity (overlap 0.050 mm per side, corner fill ON)...
+  Input50_Rerouted               input 50 ohm -> root tee                   PASS (solid to 0.722 mm)
+  Input50_Rerouted               input line -> matching-stub tee            PASS (solid to 1.387 mm)
+  Tee_InputMatch                 matching-stub tee -> open stub             PASS (solid to 1.387 mm)
+  Tee_root                       tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_0_Q                     Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_0_Q50_Taper             Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_0_50                    50 ohm line -> tee                         PASS (solid to 0.722 mm)
+  Tee_0                          tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_00_Q                    Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_00_Q50_Taper            Q50 taper -> 50 ohm route                  PASS (solid to 0.722 mm)
+  Branch_00_50_Clearance         50 ohm line -> tee                         PASS (solid to 0.722 mm)
+  Tee_00                         tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_000_Q                   Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_000_Q50_Taper           Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_000_50                  50 ohm line -> tee                         PASS (solid to 0.722 mm)
+  Tee_000                        tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_0000_Q                  Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_0000_Q50_Taper          Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_0000_50                 50 ohm line -> patch taper                 PASS (solid to 0.450 mm)
+  Branch_0000_50PT_Taper         patch taper -> patch transformer           PASS (solid to 0.450 mm)
+  Branch_0000_PT                 patch transformer -> patch                 PASS (solid to 0.450 mm)
+  Tee_000                        tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_0001_Q                  Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_0001_Q50_Taper          Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_0001_50                 50 ohm line -> patch taper                 PASS (solid to 0.450 mm)
+  Branch_0001_50PT_Taper         patch taper -> patch transformer           PASS (solid to 0.450 mm)
+  Branch_0001_PT                 patch transformer -> patch                 PASS (solid to 0.450 mm)
+  Tee_00                         tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_001_Q                   Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_001_Q50_Taper           Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_001_50                  50 ohm line -> tee                         PASS (solid to 0.722 mm)
+  Tee_001                        tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_0010_Q                  Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_0010_Q50_Taper          Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_0010_50                 50 ohm line -> patch taper                 PASS (solid to 0.450 mm)
+  Branch_0010_50PT_Taper         patch taper -> patch transformer           PASS (solid to 0.450 mm)
+  Branch_0010_PT                 patch transformer -> patch                 PASS (solid to 0.450 mm)
+  Tee_001                        tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_0011_Q                  Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_0011_Q50_Taper          Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_0011_50                 50 ohm line -> patch taper                 PASS (solid to 0.450 mm)
+  Branch_0011_50PT_Taper         patch taper -> patch transformer           PASS (solid to 0.450 mm)
+  Branch_0011_PT                 patch transformer -> patch                 PASS (solid to 0.450 mm)
+  Tee_0                          tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_01_Q                    Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_01_Q50_Taper            Q50 taper -> 50 ohm route                  PASS (solid to 0.722 mm)
+  Branch_01_50_Clearance         50 ohm line -> tee                         PASS (solid to 0.722 mm)
+  Tee_01                         tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_010_Q                   Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_010_Q50_Taper           Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_010_50                  50 ohm line -> tee                         PASS (solid to 0.722 mm)
+  Tee_010                        tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_0100_Q                  Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_0100_Q50_Taper          Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_0100_50                 50 ohm line -> patch taper                 PASS (solid to 0.450 mm)
+  Branch_0100_50PT_Taper         patch taper -> patch transformer           PASS (solid to 0.450 mm)
+  Branch_0100_PT                 patch transformer -> patch                 PASS (solid to 0.450 mm)
+  Tee_010                        tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_0101_Q                  Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_0101_Q50_Taper          Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_0101_50                 50 ohm line -> patch taper                 PASS (solid to 0.450 mm)
+  Branch_0101_50PT_Taper         patch taper -> patch transformer           PASS (solid to 0.450 mm)
+  Branch_0101_PT                 patch transformer -> patch                 PASS (solid to 0.450 mm)
+  Tee_01                         tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_011_Q                   Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_011_Q50_Taper           Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_011_50                  50 ohm line -> tee                         PASS (solid to 0.722 mm)
+  Tee_011                        tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_0110_Q                  Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_0110_Q50_Taper          Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_0110_50                 50 ohm line -> patch taper                 PASS (solid to 0.450 mm)
+  Branch_0110_50PT_Taper         patch taper -> patch transformer           PASS (solid to 0.450 mm)
+  Branch_0110_PT                 patch transformer -> patch                 PASS (solid to 0.450 mm)
+  Tee_011                        tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_0111_Q                  Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_0111_Q50_Taper          Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_0111_50                 50 ohm line -> patch taper                 PASS (solid to 0.450 mm)
+  Branch_0111_50PT_Taper         patch taper -> patch transformer           PASS (solid to 0.450 mm)
+  Branch_0111_PT                 patch transformer -> patch                 PASS (solid to 0.450 mm)
+  Tee_root                       tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_1_Q                     Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_1_Q50_Taper             Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_1_50                    50 ohm line -> tee                         PASS (solid to 0.722 mm)
+  Tee_1                          tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_10_Q                    Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_10_Q50_Taper            Q50 taper -> 50 ohm route                  PASS (solid to 0.722 mm)
+  Branch_10_50_Clearance         50 ohm line -> tee                         PASS (solid to 0.722 mm)
+  Tee_10                         tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_100_Q                   Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_100_Q50_Taper           Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_100_50                  50 ohm line -> tee                         PASS (solid to 0.722 mm)
+  Tee_100                        tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_1000_Q                  Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_1000_Q50_Taper          Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_1000_50                 50 ohm line -> patch taper                 PASS (solid to 0.450 mm)
+  Branch_1000_50PT_Taper         patch taper -> patch transformer           PASS (solid to 0.450 mm)
+  Branch_1000_PT                 patch transformer -> patch                 PASS (solid to 0.450 mm)
+  Tee_100                        tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_1001_Q                  Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_1001_Q50_Taper          Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_1001_50                 50 ohm line -> patch taper                 PASS (solid to 0.450 mm)
+  Branch_1001_50PT_Taper         patch taper -> patch transformer           PASS (solid to 0.450 mm)
+  Branch_1001_PT                 patch transformer -> patch                 PASS (solid to 0.450 mm)
+  Tee_10                         tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_101_Q                   Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_101_Q50_Taper           Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_101_50                  50 ohm line -> tee                         PASS (solid to 0.722 mm)
+  Tee_101                        tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_1010_Q                  Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_1010_Q50_Taper          Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_1010_50                 50 ohm line -> patch taper                 PASS (solid to 0.450 mm)
+  Branch_1010_50PT_Taper         patch taper -> patch transformer           PASS (solid to 0.450 mm)
+  Branch_1010_PT                 patch transformer -> patch                 PASS (solid to 0.450 mm)
+  Tee_101                        tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_1011_Q                  Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_1011_Q50_Taper          Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_1011_50                 50 ohm line -> patch taper                 PASS (solid to 0.450 mm)
+  Branch_1011_50PT_Taper         patch taper -> patch transformer           PASS (solid to 0.450 mm)
+  Branch_1011_PT                 patch transformer -> patch                 PASS (solid to 0.450 mm)
+  Tee_1                          tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_11_Q                    Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_11_Q50_Taper            Q50 taper -> 50 ohm route                  PASS (solid to 0.722 mm)
+  Branch_11_50_Clearance         50 ohm line -> tee                         PASS (solid to 0.722 mm)
+  Tee_11                         tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_110_Q                   Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_110_Q50_Taper           Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_110_50                  50 ohm line -> tee                         PASS (solid to 0.722 mm)
+  Tee_110                        tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_1100_Q                  Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_1100_Q50_Taper          Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_1100_50                 50 ohm line -> patch taper                 PASS (solid to 0.450 mm)
+  Branch_1100_50PT_Taper         patch taper -> patch transformer           PASS (solid to 0.450 mm)
+  Branch_1100_PT                 patch transformer -> patch                 PASS (solid to 0.450 mm)
+  Tee_110                        tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_1101_Q                  Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_1101_Q50_Taper          Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_1101_50                 50 ohm line -> patch taper                 PASS (solid to 0.450 mm)
+  Branch_1101_50PT_Taper         patch taper -> patch transformer           PASS (solid to 0.450 mm)
+  Branch_1101_PT                 patch transformer -> patch                 PASS (solid to 0.450 mm)
+  Tee_11                         tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_111_Q                   Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_111_Q50_Taper           Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_111_50                  50 ohm line -> tee                         PASS (solid to 0.722 mm)
+  Tee_111                        tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_1110_Q                  Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_1110_Q50_Taper          Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_1110_50                 50 ohm line -> patch taper                 PASS (solid to 0.450 mm)
+  Branch_1110_50PT_Taper         patch taper -> patch transformer           PASS (solid to 0.450 mm)
+  Branch_1110_PT                 patch transformer -> patch                 PASS (solid to 0.450 mm)
+  Tee_111                        tee -> Q(70.71ohm)                         PASS (solid to 0.722 mm)
+  Branch_1111_Q                  Q(70.71ohm) -> Q50 taper                   PASS (solid to 0.722 mm)
+  Branch_1111_Q50_Taper          Q50 taper -> 50 ohm line                   PASS (solid to 0.722 mm)
+  Branch_1111_50                 50 ohm line -> patch taper                 PASS (solid to 0.450 mm)
+  Branch_1111_50PT_Taper         patch taper -> patch transformer           PASS (solid to 0.450 mm)
+  Branch_1111_PT                 patch transformer -> patch                 PASS (solid to 0.450 mm)
+  Joints checked: 155   failures: 0
+  All feed paths geometrically continuous, no corner voids: PASS
+
+Feed-to-patch clearance verification (non-owning patches only)
+
+  Route piece                        Nearest patch    Clearance
+  Branch_10_Q50_Taper                Patch_r3_c2        6.293 mm
+  Branch_11_Q50_Taper                Patch_r3_c3        6.293 mm
+  Branch_00_Q50_Taper                Patch_r1_c2        6.293 mm
+  Branch_01_Q50_Taper                Patch_r1_c3        6.293 mm
+  Branch_10_50_Clearance             Patch_r3_c2        6.425 mm
+  Branch_11_50_Clearance             Patch_r3_c3        6.425 mm
+  Branch_01_50_Clearance             Patch_r1_c3        6.425 mm
+  Branch_00_50_Clearance             Patch_r1_c2        6.425 mm
+  Branch_01_BendFill                 Patch_r1_c3        6.514 mm
+  Branch_11_BendFill                 Patch_r3_c3        6.514 mm
+  Branch_00_BendFill                 Patch_r1_c2        6.514 mm
+  Branch_10_BendFill                 Patch_r3_c2        6.514 mm
+  Branch_01_Q                        Patch_r1_c3        6.745 mm
+  Branch_00_Q                        Patch_r1_c2        6.745 mm
+  ... 130 further pieces have larger clearance
+
+  Minimum non-owning patch clearance = 6.293 mm (Branch_10_Q50_Taper vs Patch_r3_c2)
+  Required clearance                 = 5.000 mm
+  STATUS = PASS
+
+Feed-to-feed clearance (unconnected conductors)
+  Minimum = 4.920 mm (Branch_0_50 vs Branch_00_Q50_Taper); required 3.000 mm
+  STATUS = PASS
+
+Board containment
+  Board 161.0 x 152.0 mm; tightest copper-to-edge margin 0.200 mm (Input50_Rerouted)
+  Required copper-to-edge pull-back 0.200 mm: PASS
+
+Branch symmetry by stage
+  Stage 1:  2 branches, length   35.8685 mm, spread 0.00e+00 mm  PASS
+  Stage 2:  4 branches, length   46.8224 mm, spread 1.42e-14 mm  PASS
+  Stage 3:  8 branches, length   17.9343 mm, spread 3.55e-15 mm  PASS
+  Stage 4: 16 branches, length   23.1275 mm, spread 0.00e+00 mm  PASS
+
+JLCPCB fabrication checks
+  Narrowest copper 1.000 mm (JLC minimum 0.10 mm): PASS
+  SMA_GndPad_Upper   gap to feed copper 1.000 mm, edge margin 0.200 mm: PASS
+  SMA_GndPad_Lower   gap to feed copper 1.000 mm, edge margin 0.200 mm: PASS
+  4 vias, 0.40 mm drill, each inside a ground pad: PASS
+  MountHole_1  at (-75.50, -71.00) mm, 3.2 mm NPTH, nearest top copper 12.19 mm beyond its clear ring: PASS
+  MountHole_2  at (-75.50, 71.00) mm, 3.2 mm NPTH, nearest top copper 12.19 mm beyond its clear ring: PASS
+  MountHole_3  at (75.50, -71.00) mm, 3.2 mm NPTH, nearest top copper 12.19 mm beyond its clear ring: PASS
+  MountHole_4  at (75.50, 71.00) mm, 3.2 mm NPTH, nearest top copper 12.19 mm beyond its clear ring: PASS
+  STATUS = PASS
+
+Port-to-patch budget (all lengths mm, centreline, diagonals true length)
+
+  Element          50ohm  70.71ohm    tapers   patchTx      total phase[deg]      dphi
+  r1_c1         156.8972   28.2567   15.0000    7.1824   207.3363    2703.18 0.00e+00
+  r1_c2         156.8972   28.2567   15.0000    7.1824   207.3363    2703.18 0.00e+00
+  r1_c3         156.8972   28.2567   15.0000    7.1824   207.3363    2703.18 0.00e+00
+  r1_c4         156.8972   28.2567   15.0000    7.1824   207.3363    2703.18 0.00e+00
+  r2_c1         156.8972   28.2567   15.0000    7.1824   207.3363    2703.18 0.00e+00
+  r2_c2         156.8972   28.2567   15.0000    7.1824   207.3363    2703.18 0.00e+00
+  r2_c3         156.8972   28.2567   15.0000    7.1824   207.3363    2703.18 0.00e+00
+  r2_c4         156.8972   28.2567   15.0000    7.1824   207.3363    2703.18 0.00e+00
+  r3_c1         156.8972   28.2567   15.0000    7.1824   207.3363    2703.18 0.00e+00
+  r3_c2         156.8972   28.2567   15.0000    7.1824   207.3363    2703.18 0.00e+00
+  r3_c3         156.8972   28.2567   15.0000    7.1824   207.3363    2703.18 0.00e+00
+  r3_c4         156.8972   28.2567   15.0000    7.1824   207.3363    2703.18 0.00e+00
+  r4_c1         156.8972   28.2567   15.0000    7.1824   207.3363    2703.18 0.00e+00
+  r4_c2         156.8972   28.2567   15.0000    7.1824   207.3363    2703.18 0.00e+00
+  r4_c3         156.8972   28.2567   15.0000    7.1824   207.3363    2703.18 0.00e+00
+  r4_c4         156.8972   28.2567   15.0000    7.1824   207.3363    2703.18 0.00e+00
+
+  dL_max  = 0.000e+00 mm   dphi_max = 0.000e+00 deg
+  Per-class lengths identical across all 16 paths: YES
+
+----------------------------------------------------------------------------------------------------
+OVERALL GEOMETRY VALIDATION: PASS
+This candidate geometry is not yet full-wave solved.  No claim is made about S11, VSWR, gain, coupling or efficiency.
+----------------------------------------------------------------------------------------------------

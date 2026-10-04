@@ -1,0 +1,48 @@
+# Ansys HFSS / AEDT – solution data, locks, backups (too large / machine-specific)
+*.aedtresults/
+*.aedt.lock
+*.aedt.auto
+*.asol
+*.semaphore
+*.conv
+*.profile
+*.aedtz
+
+# Vivado / Vitis
+.Xil/
+*.cache/
+*.runs/
+*.sim/
+*.hw/
+*.ip_user_files/
+*.jou
+vivado*.log
+vivado*.str
+
+# MATLAB
+*.asv
+*.mex*
+slprj/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
+
+# OS / editors
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+.vscode/
+.idea/
